@@ -8,9 +8,9 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid ShowGridLines="true">
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -19,7 +19,7 @@
         </Grid.ColumnDefinitions>
 
         <Label Content="text" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center"/>
-        <TextBox Grid.Row="1" Grid.Column="1" Width="199" Height="42"/>
+        <TextBox Grid.Row="1" Grid.Column="1" VerticalAlignment="Stretch" />
         <Button Content="buttno" Grid.Row="2" Grid.Column="1"/>
     </Grid>
 
