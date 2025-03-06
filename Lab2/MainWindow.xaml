@@ -6,21 +6,11 @@
         xmlns:local="clr-namespace:Lab2"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid ShowGridLines="true">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="4*"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-
-        <Label Content="text" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center"/>
-        <TextBox Grid.Row="1" Grid.Column="1" VerticalAlignment="Stretch" />
-        <Button Content="buttno" Grid.Row="2" Grid.Column="1"/>
-    </Grid>
-
+    <StackPanel>
+        <Label Content="label" HorizontalAlignment="Center"/>
+        <TextBox Text="TextBlock" Width="250"/>
+        <TextBox Text="TextBlock" Width="250"/>
+        <TextBox Text="TextBlock" Width="250"/>
+        <Button Content="button" Width="120"/>
+    </StackPanel>
 </Window>
