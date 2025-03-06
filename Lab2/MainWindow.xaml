@@ -7,25 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
 
-    <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
-        <Label Content="Label" FontSize="14" VerticalAlignment="Center"/>
-        <TextBox Width="60" Margin="2"/>
-        <TextBox Width="60" Margin="2"/>
-        <TextBox Width="60" Margin="2"/>
-        <TextBox Width="60" Margin="2"/>
-        <TextBox Width="60" Margin="2"/>
-        <TextBox Width="60" Margin="2"/>
-        <TextBox Width="60" Margin="2"/>
-
-        <Label Content="Label" FontSize="14" VerticalAlignment="Center"/>
-        <TextBox Width="60" Margin="2"/>
-        <TextBox Width="60" Margin="2"/>
-        <TextBox Width="60" Margin="2"/>
-        <TextBox Width="60" Margin="2"/>
-        <TextBox Width="60" Margin="2"/>
-        <TextBox Width="60" Margin="2"/>
-        <TextBox Width="60" Margin="2"/>
-
-        <Button Content="Button" Width="80" Height="30" Margin="10"/>
-    </WrapPanel>
+    <DockPanel>
+        <Label DockPanel.Dock="Top" HorizontalAlignment="Center">Label</Label>
+        <TextBox DockPanel.Dock="Left" Width="130">TextBox</TextBox>
+        <TextBox DockPanel.Dock="Right" Width="130">TextBox</TextBox>
+        <Button DockPanel.Dock="Bottom"  Height="20" Width="90">Button</Button>
+    </DockPanel>
 </Window>
