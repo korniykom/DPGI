@@ -5,11 +5,42 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lab2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="TextEditor" Height="450" Width="800">
+    <Grid ShowGridLines="False">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
 
-    <Canvas Background="Aqua">
-        <Label Canvas.Top="20" Canvas.Left="20">Label</Label>
-        <TextBox Canvas.Top="40" Canvas.Left="40">TextBox</TextBox>
-        <Button Canvas.Top="60" Canvas.Left="60">Button</Button>
-    </Canvas>
+        <Border Grid.Row="0" BorderBrush="#FFCBBEBE" BorderThickness="2" CornerRadius="10">
+            <StackPanel Grid.Row="0" Orientation="Horizontal">
+                <Button Width="50" Height="50">
+                    <Image ToolTip="Open" Source="C:\Users\max\Desktop\DPGI\Lab2\images\Open.png"/>
+                </Button>
+                <Button Width="50" Height="50">
+                    <Image ToolTip="Clear" Source="C:\Users\max\Desktop\DPGI\Lab2\images\Clear.png"/>
+                </Button>
+                <Button Width="50" Height="50">
+                    <Image ToolTip="Copy" Source="C:\Users\max\Desktop\DPGI\Lab2\images\Copy.png"/>
+                </Button>
+                <Button Width="50" Height="50">
+                    <Image ToolTip="Paste" Source="C:\Users\max\Desktop\DPGI\Lab2\images\Paste.png"/>
+                </Button>
+            </StackPanel>
+        </Border>
+        <Border Grid.Row="1" BorderBrush="#FFCBBEBE" BorderThickness="2" CornerRadius="10">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <TextBox Grid.Row="0" Margin="10" TextWrapping="Wrap" VerticalScrollBarVisibility="Visible"/>
+
+                <DockPanel Grid.Row="1" Margin="10 5 10 10">
+                    <Button Width="30" DockPanel.Dock="Bottom" Content="OK" />
+                </DockPanel>
+            </Grid>
+        </Border>
+    </Grid>
 </Window>
